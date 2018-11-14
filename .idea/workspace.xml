@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ca2b273-6557-4006-90b8-1008eaf710b4" name="Default Changelist" comment="" />
+    <list default="true" id="5ca2b273-6557-4006-90b8-1008eaf710b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/definitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/definitions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heart_rate_ai/fitbit_data/fitbit_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/heart_rate_ai/fitbit_data/fitbit_data.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,15 +14,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AI_FinalProject$fitbit_data.coverage" NAME="fitbit_data Coverage Results" MODIFIED="1542040840769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heart_rate_ai/fitbit_data" />
+    <SUITE FILE_PATH="coverage/AI_FinalProject$fitbit_data.coverage" NAME="fitbit_data Coverage Results" MODIFIED="1542233521143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heart_rate_ai/fitbit_data" />
+    <SUITE FILE_PATH="coverage/AI_FinalProject$demo.coverage" NAME="demo Coverage Results" MODIFIED="1542167124964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heart_rate_ai/ai_data_processing" />
+    <SUITE FILE_PATH="coverage/AI_FinalProject$activity_neural_network.coverage" NAME="activity_neural_network Coverage Results" MODIFIED="1542231765147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heart_rate_ai/ai_data_processing" />
+    <SUITE FILE_PATH="coverage/AI_FinalProject$heart_nn.coverage" NAME="heart_nn Coverage Results" MODIFIED="1542161310518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/heart_rate_ai/ai_data_processing" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/heart_rate_ai/fitbit_data/fitbit_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+            <state relative-caret-position="221">
+              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -26,10 +34,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heart_rate_ai/ai_data_processing/activity_neural_network.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1118">
+              <caret line="150" column="37" selection-start-line="150" selection-start-column="37" selection-end-line="150" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heart_rate_ai/ai_data_processing/demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1598">
+              <caret line="107" column="23" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/definitions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -37,8 +69,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heart_rate_ai/fitbit_data/fitbit_authentication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state relative-caret-position="357">
+              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+              <folding>
+                <element signature="e#54#69#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,20 +87,30 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/definitions.py" />
+        <option value="$PROJECT_DIR$/heart_rate_ai/utilities/data_frame_support.py" />
         <option value="$PROJECT_DIR$/heart_rate_ai/fitbit_data/fitbit_data.py" />
+        <option value="$PROJECT_DIR$/heart_rate_ai/ai_data_processing/heart_nn.py" />
+        <option value="$PROJECT_DIR$/heart_rate_ai/ai_data_processing/demo.py" />
+        <option value="$PROJECT_DIR$/definitions.py" />
+        <option value="$PROJECT_DIR$/heart_rate_ai/ai_data_processing/activity_neural_network.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="246" />
-    <option name="y" value="57" />
-    <option name="width" value="2104" />
+    <option name="x" value="1382" />
+    <option name="y" value="123" />
+    <option name="width" value="2039" />
     <option name="height" value="1335" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -88,7 +133,19 @@
               <item name="AI_FinalProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="AI_FinalProject" type="462c0819:PsiDirectoryNode" />
               <item name="heart_rate_ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai_data_processing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AI_FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AI_FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="heart_rate_ai" type="462c0819:PsiDirectoryNode" />
               <item name="fitbit_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AI_FinalProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AI_FinalProject" type="462c0819:PsiDirectoryNode" />
+              <item name="heart_rate_ai" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -101,6 +158,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JonPC\Desktop\Programming\Projects\AI_FinalProject\heart_rate_ai\ai_data_processing" />
+      <recent name="C:\Users\JonPC\Desktop\Programming\Projects\AI_FinalProject\heart_rate_ai\Statistics" />
+      <recent name="C:\Users\JonPC\Desktop\Programming\Projects\AI_FinalProject\heart_rate_ai\utilities" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -114,7 +179,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.fitbit_data">
+    <configuration name="activity_neural_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AI_FinalProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/heart_rate_ai/ai_data_processing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heart_rate_ai/ai_data_processing/activity_neural_network.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AI_FinalProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/heart_rate_ai/ai_data_processing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heart_rate_ai/ai_data_processing/demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="fitbit_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AI_FinalProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,9 +246,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="heart_nn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AI_FinalProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/heart_rate_ai/ai_data_processing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\JonPC\Desktop\Programming\Projects\AI_FinalProject\heart_rate_ai\ai_data_processing\activity_neural_network.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.fitbit_data" />
+        <item itemvalue="Python.activity_neural_network" />
+        <item itemvalue="Python.demo" />
+        <item itemvalue="Python.heart_nn" />
       </list>
     </recent_temporary>
   </component>
@@ -154,12 +288,16 @@
       <option name="presentableId" value="Default" />
       <updated>1541988193219</updated>
       <workItem from="1541988196068" duration="5012000" />
-      <workItem from="1542031446331" duration="8851000" />
+      <workItem from="1542031446331" duration="9161000" />
+      <workItem from="1542061312869" duration="11169000" />
+      <workItem from="1542116773549" duration="46965000" />
+      <workItem from="1542203464206" duration="2019000" />
+      <workItem from="1542226102836" duration="2753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13863000" />
+    <option name="totallyTimeSpent" value="77079000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -171,29 +309,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="246" y="57" width="2104" height="1335" extended-state="0" />
+    <frame x="931" y="26" width="2365" height="1335" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18003914" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16529284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294509" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3294509" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294509" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294509" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997118" weight="0.3294509" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294509" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002882" side_tool="true" weight="0.3294509" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3294509" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3294509" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.18688846" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.39696312" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -204,6 +342,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/heart_rate_ai/ai_data_processing/demo.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/heart_rate_ai/ai_data_processing/demo.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -275,49 +425,89 @@
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&lt;bound method DataFrame.set_index of                     Time ACTIVITY
+0    2018-11-12 00:00:00    SLEEP
+1    2018-11-12 00:01:00    SLEEP
+2    2018-11-12 00:02:00    SLEEP
+3    2018-11-12 00:03:00    SLEEP
+4    2018-11-12 00:04:00    SLEEP
+5    2018-11-12 00:05:00    SLEEP
+6    2018-11-12 00:06:00    SLEEP
+7    2018-11-12 00:07:00    SLEEP
+8    2018-11-12 00:08:00    SLEEP
+9    2018-11-12 00:09:00    SLEEP
+10   2018-11-12 00:10:00    SLEEP
+11   2018-11-12 00:11:00    SLEEP
+12   2018-11-12 00:12:00    SLEEP
+13   2018-11-12 00:13:00    SLEEP
+14   2018-11-12 00:14:00    SLEEP
+15   2018-11-12 00:15:00    SLEEP
+16   2018-11-12 00:16:00    SLEEP
+17   2018-11-12 00:17:00    SLEEP
+18   2018-11-12 00:18:00    SLEEP
+19   2018-11-12 00:19:00    SLEEP
+20   2018-11-12 00:20:00    SLEEP
+21   2018-11-12 00:21:00    SLEEP
+22   2018-11-12 00:22:00    SLEEP
+23   2018-11-12 00:23:00    SLEEP
+24   2018-11-12 00:24:00    SLEEP
+25   2018-11-12 00:25:00    SLEEP
+26   2018-11-12 00:26:00    SLEEP
+27 ...</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>data_scraper.scrape_dates()</expression-string>
+        <expression-string>inv_output = self._categorical_data_scaler.inverse_transform(np.column_stack((test_IN, test_OUT)))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>data_scraper.authentication_process()</expression-string>
+        <expression-string>inv_output = self._categorical_data_scaler.inverse_transform(inv_output)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self._daterange(parser.parse(START_DATE), datetime.datetime.now())</expression-string>
+        <expression-string>np.column_stack((test_IN, test_OUT))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self._daterange(START_DATE, datetime.datetime.now())</expression-string>
+        <expression-string>np.column_stack((test_IN, test_OUT), axis=0)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self._daterange(START_DATE, datetime.datetime.now().strftime(&quot;%Y-%m-%d&quot;))</expression-string>
+        <expression-string>np.concatenate((test_IN, test_OUT), axis=0)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self._daterange(START_DATE, datetime.now())</expression-string>
+        <expression-string>np.concatenate((test_IN, test_OUT), axis=1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.scrape_dates()</expression-string>
+        <expression-string>test_OUT.shape[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>os.path.isfile(filename)</expression-string>
+        <expression-string>test_IN.shape[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>filename = self._project_dir + DATA_DIRECTORY + '/' + date + FILE_EXT</expression-string>
+        <expression-string>np.hstack((test_IN, test_OUT))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.hstack((test_IN, test_OUT),axis=0)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -331,24 +521,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/AI_Final_Project_Env/Lib/genericpath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/AI_Final_Project_Env/Lib/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/AI_Final_Project_Env/Lib/enum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10081">
+          <caret line="596" selection-start-line="596" selection-end-line="596" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/AI_Final_Project_Env/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="306" column="7" lean-forward="true" selection-start-line="306" selection-start-column="7" selection-end-line="306" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/AI_Final_Project_Env/Lib/site-packages/pandas/io/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="1815" selection-start-line="1815" selection-end-line="1815" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="1688" selection-start-line="1688" selection-end-line="1688" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heart_rate_ai/utilities/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heart_rate_ai/utilities/data_frame_support.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heart_rate_ai/Statistics/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heart_rate_ai/ai_data_processing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heart_rate_ai/ai_data_processing/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/heart_rate_ai/fitbit_data/fitbit_authentication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="357">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <folding>
+            <element signature="e#54#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/definitions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heart_rate_ai/ai_data_processing/activity_neural_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1118">
+          <caret line="150" column="37" selection-start-line="150" selection-start-column="37" selection-end-line="150" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/heart_rate_ai/fitbit_data/fitbit_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

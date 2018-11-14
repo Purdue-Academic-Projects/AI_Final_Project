@@ -1,16 +1,21 @@
 import pandas as pd
-import os
 import fitbit
 import datetime
 import heart_rate_ai.fitbit_data.fitbit_authentication as Oauth2
 from dateutil import parser
-from definitions import ROOT_DIR
+from enum import Enum
+from definitions import *
+from heart_rate_ai.utilities.data_frame_support import *
 
-CLIENT_ID = '22D56P'
-CLIENT_SECRET = '9aefa27740d00cd57d1b06beb43992ac'
-START_DATE = '2018-11-10' # '2016-09-28' ACTUAL DATE, JUST FOR TESTING
-DATA_DIRECTORY = '/Downloaded_Data/'
-FILE_EXT = '.csv'
+
+class FitbitActivity(Enum):
+    STEPS = 0
+    SLEEP = 1
+    CALORIES = 2
+    DISTANCE = 3
+    FLOORS = 4
+    ELEVATION = 5
+    HEART = 6
 
 
 class FitbitDataScraper:
@@ -28,51 +33,97 @@ class FitbitDataScraper:
                                                   access_token=retrieved_access_token,
                                                   refresh_token=retrieved_refresh_token)
 
-    def _dataframe_extraction(self,data_type):
+    def _write_data_to_file(self, date, data_frame, activity):
+        filename = self._project_dir + RAW_DATA_DIRECTORY + date.strftime("%Y-%m-%d") + FILE_EXT
+        DataFrameIO.append_df_to_excel(filename, data_frame, activity.name, index=False)
 
-    def _process_heart_rate_data(self, date):
-        heart_rate_stats = self.authorization_client.intraday_time_series('activities/heart',
-                                                                          base_date=date, detail_level='1sec')
-        time_list = []
-        val_list = []
-        for i in heart_rate_stats['activities-heart-intraday']['dataset']:
-            val_list.append(i['value'])
-            time_list.append(i['time'])
+    @staticmethod
+    def _data_frame_conversion(activity_data, activity):
+        # Ensure data exists before processing
+        if not activity_data['activities-' + activity.name.lower() + '-intraday']:
+            return pd.DataFrame()
+        else:
+            time_list = []
+            val_list = []
+            for entry in activity_data['activities-' + activity.name.lower() + '-intraday']['dataset']:
+                val_list.append(entry['value'])
+                time_list.append(entry['time'])
+            return pd.DataFrame({'Time': time_list, activity.name: val_list})
 
-        heart_df = pd.DataFrame({'Time': time_list, 'Heart Rate': val_list})
-        filename = self._project_dir + DATA_DIRECTORY + date + FILE_EXT
-        heart_df.to_csv(filename, columns=['Time', 'Heart Rate'], header=True, index=False)
-
-    def _process_distance_data(self, date):
-        distance_stats = self.authorization_client.intraday_time_series('activities/distance',
-                                                                        base_date=date, detail_level='1min')
+    @staticmethod
+    def _sleep_data_frame_conversion(activity_data, activity):
+        # Ensure data exists before processing
+        if not activity_data[activity.name.lower()]:
+            return pd.DataFrame()
+        else:
+            time_list = []
+            val_list = []
+            for entry in activity_data[activity.name.lower()][0]['minuteData']:
+                val_list.append(int(entry['value']))
+                time_list.append(entry['dateTime'])
+            return pd.DataFrame({'Time': time_list, activity.name: val_list})
 
     def scrape_activities(self, date):
-        self._process_heart_rate_data(date)
-        self._process_distance_data(date)
+        # Iterate through each activity type
+        for activity in FitbitActivity:
+            # Reflect the current enumerated value into its string equivalent
+            activity_type = 'activities/' + activity.name.lower()
 
-    def scrape_activities_over_dates(self):
-        # date = str((datetime.datetime.now() - datetime.timedelta(days=1)).strftime("%Y-%m-%d"))
-        for current_date in self._daterange(parser.parse(START_DATE), datetime.datetime.now()):
+            # Determine the data detail-level
+            if activity == FitbitActivity.HEART:
+                sampling_interval = '1sec'
+            else:
+                sampling_interval = '1min'
+
+            # Request the specified activity type from the Fitbit API
+            activity_data_frame = None
+            if activity != FitbitActivity.SLEEP:
+                activity_data = self.authorization_client.intraday_time_series(activity_type,
+                                                                               base_date=date,
+                                                                               detail_level=sampling_interval)
+                # Process the data into a DataFrame
+                activity_data_frame = FitbitDataScraper._data_frame_conversion(activity_data, activity)
+            else:
+                activity_data = self.authorization_client.get_sleep(date)
+                # Process the data into a DataFrame
+                activity_data_frame = FitbitDataScraper._sleep_data_frame_conversion(activity_data, activity)
+
+            # Save Data to a file
+            if not activity_data_frame.empty:
+                self._write_data_to_file(date, activity_data_frame, activity)
+
+    def scrape_activities_over_dates(self, overwrite_old_data):
+        yesterday = datetime.datetime.now() - datetime.timedelta(1)  # Use yesterday so we have a full day's data
+        for current_date in FitbitDataScraper._generate_date_range(parser.parse(START_DATE), yesterday):
             if self._check_if_data_exists(current_date.strftime("%Y-%m-%d")):
-                print('Data already exists')
+                if overwrite_old_data:
+                    print('Overwriting existing data')
+                    self._remove_file(current_date.strftime("%Y-%m-%d"))
+                    self.scrape_activities(current_date)
+                else:
+                    print('Data already exists, overwriting not enabled')
             else:
                 print('scraping...')
                 self.scrape_activities(current_date)
 
     def _check_if_data_exists(self, date):
-        filename = self._project_dir + DATA_DIRECTORY + date + FILE_EXT
+        filename = self._project_dir + RAW_DATA_DIRECTORY + date + FILE_EXT
         does_file_exist = os.path.isfile(filename)
         return does_file_exist
 
-    def _daterange(self, start_date, end_date):
+    def _remove_file(self, date):
+        filename = self._project_dir + RAW_DATA_DIRECTORY + date + FILE_EXT
+        os.remove(filename)
+
+    @staticmethod
+    def _generate_date_range(start_date, end_date):
         return (start_date + datetime.timedelta(days=i) for i in range((end_date - start_date).days + 1))
 
 
 def main():
     data_scraper = FitbitDataScraper()
     data_scraper.authentication_process()
-    data_scraper.scrape_activities_over_dates()
+    data_scraper.scrape_activities_over_dates(True)
 
 
 if __name__ == '__main__':
