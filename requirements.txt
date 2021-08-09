@@ -46,7 +46,7 @@ pyparsing==2.3.0
 PySocks==1.6.8
 python-dateutil==2.7.5
 pytz==2018.7
-pywin32==223
+pywin32==301
 PyYAML==3.13
 repoze.lru==0.7
 requests==2.20.0
